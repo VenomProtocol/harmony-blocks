@@ -1,14 +1,14 @@
 specVersion: 0.0.2
-description: Indexing all Ethereum Block data
-repository: https://github.com/blocklytics/ethereum-blocks
+description: Indexing all Harmony Block data
+repository: https://github.com/VenomProtocol/harmony-blocks
 schema:
   file: ./schema.graphql
 dataSources:
   - kind: ethereum/contract
     name: ConverterRegistryContract
-    network: rinkeby
+    network: mainnet
     source:
-      address: "0x0ddff327ddf7fe838e3e63d02001ef23ad1ede8e"
+      address: "0xcefb7298c774b3705b0aec852c8ea3952ea3e2bf"
       abi: ConverterRegistryContract
     mapping:
       kind: ethereum/events
