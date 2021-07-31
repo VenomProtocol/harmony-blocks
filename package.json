@@ -1,18 +1,18 @@
 {
-  "name": "harmony-blocks",
+  "name": "bsc-blocks",
   "license": "UNLICENSED",
   "scripts": {
     "codegen": "graph codegen",
     "build": "graph build",
-    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ harmony/blocks",
-    "create-local": "graph create --node http://localhost:8020/ harmony/blocks",
-    "remove-local": "graph remove --node http://localhost:8020/ harmony/blocks",
-    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 harmony/blocks",
-    "deploy-rinkeby": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ blocklytics/rinkeby-blocks",
-    "deploy-kovan": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ blocklytics/kovan-blocks",
-    "deploy-goerli": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ blocklytics/goerli-blocks",
-    "deploy-ropsten": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ blocklytics/ropsten-blocks",
-    "deploy-poa": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ blocklytics/poa-core-blocks"
+    "create-local": "graph create venomprotocol/bsc-blocks --node http://localhost:8020/",
+    "remove-local": "graph remove venomprotocol/bsc-blocks --node http://localhost:8020/",
+    "deploy-local": "graph deploy venomprotocol/bsc-blocks --node http://localhost:8020/ --ipfs http://localhost:5001",
+    "deploy": "graph deploy venomprotocol/bsc-blocks --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ --debug",
+    "deploy-rinkeby": "graph deploy https://api.thegraph.com/ipfs/ blocklytics/rinkeby-blocks --node https://api.thegraph.com/deploy/ --ipfs",
+    "deploy-kovan": "graph deploy blocklytics/kovan-blocks --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/",
+    "deploy-goerli": "graph deploy blocklytics/goerli-blocks --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/",
+    "deploy-ropsten": "graph deploy blocklytics/ropsten-blocks --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/",
+    "deploy-poa": "graph deploy blocklytics/poa-core-blocks --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/"
   },
   "dependencies": {
     "@graphprotocol/graph-cli": "^0.17.1",

@@ -1,14 +1,14 @@
 specVersion: 0.0.2
-description: Indexing all Harmony Block data
-repository: https://github.com/VenomProtocol/harmony-blocks
+description: Indexing all Binance Smart Chain Block data
+repository: https://github.com/VenomProtocol/subgraph-blocks
 schema:
   file: ./schema.graphql
 dataSources:
   - kind: ethereum/contract
     name: ConverterRegistryContract
-    network: mainnet
+    network: bsc
     source:
-      address: "0xcefb7298c774b3705b0aec852c8ea3952ea3e2bf"
+      address: "0xcd267d0feb8f71b2a7783a8752c1f76e62dcdcaf"
       abi: ConverterRegistryContract
     mapping:
       kind: ethereum/events
